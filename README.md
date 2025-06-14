@@ -23,7 +23,7 @@ This project contains end-to-end tests for the Sauce Demo website (https://www.s
    - Sort by name (Z to A)
 
 ## Prerequisites
-- Node.js (v12 or higher)
+- Node.js (v22 or higher)
 - npm (Node Package Manager)
 
 ## Installation
