@@ -26,6 +26,8 @@ module.exports = defineConfig({
     defaultCommandTimeout: 10000,
     requestTimeout: 10000,
     responseTimeout: 30000,
-    chromeWebSecurity: false
+    chromeWebSecurity: false,
+    screenshotsFolder: 'cypress/screenshots',
+    videosFolder: 'cypress/videos'
   },
 }); 
