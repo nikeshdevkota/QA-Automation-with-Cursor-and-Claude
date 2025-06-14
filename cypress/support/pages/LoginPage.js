@@ -9,7 +9,12 @@ class LoginPage {
 
     // Actions
     visit() {
-        cy.visit('/');
+        cy.visit('/', {
+            timeout: 120000,
+            failOnStatusCode: true,
+            retryOnStatusCodeFailure: true,
+            retryOnNetworkFailure: true
+        });
     }
 
     login(username, password) {

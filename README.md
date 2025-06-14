@@ -1,5 +1,7 @@
 # Sauce Demo E2E Testing Framework
 
+Created by Nikesh Devkota
+
 This project contains end-to-end tests for the Sauce Demo website (https://www.saucedemo.com/) using Cypress with Cucumber BDD.
 
 ## Framework Structure

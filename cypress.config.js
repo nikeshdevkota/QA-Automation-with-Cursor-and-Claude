@@ -16,21 +16,16 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://www.saucedemo.com/',
-    specPattern: 'cypress/e2e/features/**/*.feature',
-    supportFile: 'cypress/support/e2e.js',
     setupNodeEvents,
-    chromeWebSecurity: false,
-    experimentalStudio: true,
+    baseUrl: 'https://www.saucedemo.com',
+    specPattern: 'cypress/e2e/**/*.feature',
+    supportFile: 'cypress/support/e2e.js',
     video: false,
     screenshotOnRunFailure: true,
+    pageLoadTimeout: 120000,
     defaultCommandTimeout: 10000,
-    viewportWidth: 1280,
-    viewportHeight: 720,
-    retries: {
-      runMode: 2,
-      openMode: 0
-    },
-    stepDefinitions: 'cypress/support/step_definitions/**/*.{js,ts}'
+    requestTimeout: 10000,
+    responseTimeout: 30000,
+    chromeWebSecurity: false
   },
 }); 

@@ -1,24 +1,24 @@
 {
-  "name": "sauce-demo-cypress",
+  "name": "sauce-demo-e2e-tests",
   "version": "1.0.0",
-  "description": "Cypress BDD framework for Sauce Demo website",
-  "main": "index.js",
+  "description": "E2E tests for Sauce Demo website using Cypress and Cucumber",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "test": "cypress run"
   },
   "keywords": [
     "cypress",
-    "bdd",
     "cucumber",
-    "testing"
+    "testing",
+    "e2e"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^12.17.0"
+    "@cypress/webpack-preprocessor": "^5.17.0",
+    "cypress": "^13.6.1",
+    "esbuild": "^0.19.8"
   }
 }
