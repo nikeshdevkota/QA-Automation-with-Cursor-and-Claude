@@ -12,4 +12,7 @@ if (app) {
     style.innerHTML = '.command-name-request, .command-name-xhr { display: none }';
     app.document.head.appendChild(style);
   });
-} 
+}
+
+// Import cucumber preprocessor
+import '@badeball/cypress-cucumber-preprocessor' 

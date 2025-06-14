@@ -9,6 +9,9 @@ async function setupNodeEvents(on, config) {
     'file:preprocessor',
     createBundler({
       plugins: [createEsbuildPlugin.default(config)],
+      define: {
+        global: 'window',
+      },
     })
   );
   return config;
