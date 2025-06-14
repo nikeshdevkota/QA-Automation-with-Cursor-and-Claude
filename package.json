@@ -17,8 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
-    "@cypress/webpack-preprocessor": "^5.17.0",
-    "cypress": "^13.6.1",
-    "esbuild": "^0.19.8"
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "cypress": "^12.17.0",
+    "esbuild": "^0.19.12"
   }
 }

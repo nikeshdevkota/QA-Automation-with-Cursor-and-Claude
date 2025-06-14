@@ -22,7 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm ci --prefer-offline --no-audit
+          rm -rf node_modules package-lock.json
+          npm install
           mkdir -p cypress/screenshots
 
       - name: Run Cypress tests
